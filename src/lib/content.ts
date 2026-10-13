@@ -4,7 +4,7 @@ export const profile = {
   headline: "Product engineer specializing in frontend systems & complex data workflows.",
   subhead:
     "I build polished, accessible, high-performance interfaces that turn dense scientific and operational data into clear, usable products.",
-  email: "yathendraa04@gmail.com",
+  email: "ya.anka04@gmail.com",
   github: "https://github.com/Yathendrareddy",
   resumeHref: "/resume.pdf",
   location: "Houston, TX",
@@ -13,11 +13,11 @@ export const profile = {
 export const experience = [
   {
     company: "Cardinal Health",
-    title: "Product Experience Engineer",
+    title: "Product Engineer",
     dates: "August 2024 – Present",
   },
   {
-    company: "Vivma Software Inc.",
+    company: "Swiggy",
     title: "Frontend Product Engineer",
     dates: "July 2020 – July 2022",
   },
@@ -62,9 +62,9 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
-    id: "vivma-operations-dashboard",
+    id: "swiggy-operations-dashboard",
     tag: "02",
-    company: "Vivma Software Inc.",
+    company: "Swiggy",
     title: "Operations & Data Processing Dashboard",
     summary:
       "A high-density operations dashboard for monitoring long-running jobs, searching large record logs, and triaging errors — built for speed and power-user ergonomics.",

@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
+import { SpotlightCard } from "@/components/SpotlightCard";
 import { caseStudies } from "@/lib/content";
 
 export function CaseStudies() {
@@ -22,11 +22,7 @@ export function CaseStudies() {
         <div className="mt-16 space-y-8">
           {caseStudies.map((study, idx) => (
             <Reveal key={study.id} delay={idx * 0.08}>
-              <motion.article
-                whileHover={{ borderColor: "var(--accent)" }}
-                transition={{ duration: 0.3 }}
-                className="group rounded-2xl border border-border bg-background-raised/40 p-8 sm:p-10"
-              >
+              <SpotlightCard className="rounded-2xl border border-border bg-background-raised/40 p-8 transition-colors duration-300 hover:border-accent/50 sm:p-10">
                 <div className="flex flex-col gap-10 lg:flex-row">
                   <div className="lg:w-1/3">
                     <span className="font-mono-tight text-sm text-muted">{study.tag}</span>
@@ -91,7 +87,7 @@ export function CaseStudies() {
                     </div>
                   </div>
                 </div>
-              </motion.article>
+              </SpotlightCard>
             </Reveal>
           ))}
         </div>

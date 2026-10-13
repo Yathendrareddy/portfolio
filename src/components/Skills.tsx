@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Reveal } from "@/components/Reveal";
+import { SpotlightCard } from "@/components/SpotlightCard";
 import { skillGroups, experience, education } from "@/lib/content";
 
 export function Skills() {
@@ -18,7 +19,7 @@ export function Skills() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group, idx) => (
             <Reveal key={group.title} delay={idx * 0.06}>
-              <div className="h-full rounded-2xl border border-border bg-background-raised/40 p-6">
+              <SpotlightCard className="h-full rounded-2xl border border-border bg-background-raised/40 p-6 transition-colors duration-300 hover:border-accent/40">
                 <h3 className="font-mono-tight text-xs uppercase tracking-wider text-muted">
                   {group.title}
                 </h3>
@@ -34,7 +35,7 @@ export function Skills() {
                     </motion.span>
                   ))}
                 </div>
-              </div>
+              </SpotlightCard>
             </Reveal>
           ))}
         </div>

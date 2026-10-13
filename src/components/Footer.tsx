@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, ArrowUpRight } from "lucide-react";
 import { GithubIcon } from "@/components/icons/GithubIcon";
+import { MagneticButton } from "@/components/MagneticButton";
 import { Reveal } from "@/components/Reveal";
 import { profile } from "@/lib/content";
 
@@ -21,15 +22,13 @@ export function Footer() {
               Open to Design Engineer and product frontend roles. Based in {profile.location}.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <motion.a
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              <MagneticButton
                 href={`mailto:${profile.email}`}
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-medium text-[#04120b] shadow-[0_0_30px_-8px_rgba(52,211,153,0.6)]"
               >
                 <Mail className="h-4 w-4" />
                 {profile.email}
-              </motion.a>
+              </MagneticButton>
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, FileDown } from "lucide-react";
 import { GithubIcon } from "@/components/icons/GithubIcon";
+import { MagneticButton } from "@/components/MagneticButton";
 import { profile } from "@/lib/content";
 
 const container = {
@@ -60,15 +61,13 @@ export function Hero() {
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-4">
-            <motion.a
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
+            <MagneticButton
               href="#work"
               className="inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-medium text-[#04120b] shadow-[0_0_30px_-8px_rgba(52,211,153,0.6)]"
             >
               View case studies
               <ArrowUpRight className="h-4 w-4" />
-            </motion.a>
+            </MagneticButton>
             <motion.a
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
